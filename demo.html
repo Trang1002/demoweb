@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>THỜI TRANG VIỆT</title>
+
+    <style>
+        #wrapper {
+            width: 1200px;
+            margin: auto;
+        }
+        
+        #header {
+            width: 100%;
+        }
+        
+        #menu {
+            width: 100%;
+        }
+        
+        #main_content {
+            width: 100%;
+        }
+        
+        #footer {
+            width: 100%;
+            height: 150px;
+        }
+        
+        #logo {
+            width: 25%;
+            float: left;
+        }
+        
+        #banner {
+            width: 75%;
+            float: left;
+        }
+        
+        #logo_img {
+            width: 300px;
+            height: 240px;
+        }
+        
+        #banner_img {
+            width: 900px;
+            height: 240px;
+            /*chiều rộng và cao ảnh*/
+        }
+        
+        .menu_item {
+            display: inline-block;
+            /*dàn các mục của danh sách theo hàng ngang*/
+            width: 16%;
+            /* độ rộng của mỗi mục menu*/
+            font-size: 14pt;
+            /*nên dùng pt */
+            display: inline-block;
+            text-align: center;
+            line-height: 32px;
+            min-height: 30px;
+            background-color: #EEE;
+        }
+        
+        .menu_item:hover {
+            color: red;
+            background-color: #CCC;
+        }
+        
+        #left_menu {
+            width: 25%;
+            float: left;
+        }
+        
+        #content {
+            width: 75%;
+            float: right;
+        }
+        
+        .content_item {
+            width: 33%;
+            float: left;
+        }
+        
+        .item_img {
+            width: 90%;
+            margin-top: 10px;
+            /*căn giữa ảnh*/
+            text-align: center;
+            height: 240px;
+            padding: 10px;
+            box-shadow: 2px 2px 20px black;
+            border-radius: 20px;
+        }
+        
+        .item_title {
+            font-size: 14pt;
+            font-weight: bold;
+        }
+        
+        .price {}
+        
+        .old_price {
+            font-size: 14pt;
+            color: red;
+            text-decoration: line-through;
+            /*đặt dấu ngang xuyên qua chữ*/
+        }
+        
+        .new_price {
+            font-size: 13pt;
+            color: blue;
+        }
+        
+        #footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div id="logo">
+                <img src="images/logo.jpg" id="logo_img">
+
+            </div>
+
+            <div id="banner">
+                <img src="images/banner.jpg" id="banner_img">
+
+            </div>
+
+        </div>
+
+        <div id="menu">
+            <ol>
+                <li class="menu_item"> Trang chủ</li>
+                <li class="menu_item">Sản phẩm</li>
+                <li class="menu_item">Hàng mới về</li>
+                <li class="menu_item">Danh mục</li>
+                <li class="menu_item">Bài viết</li>
+                <li class="menu_item">Khác</li>
+
+
+
+
+            </ol>
+
+        </div>
+
+        <div id="main_content">
+            <div id="left_menu">
+                <div><b>Sản phẩm đặc biệt</b></div>
+
+            </div>
+
+            <div id="content">
+                <div class="content_item">
+                    <div>
+                        <img src="images/photo01.jpg" class="item_img">
+
+                    </div>
+                    <div>
+                        <p class="item_title">MÃ VNXK_01</p>
+                        <p class="price">Giá:
+                            <span class="old_price">420.000</span>
+                            <span class="new_price">360.000</span>
+                        </p>
+
+                    </div>
+                </div>
+                <div class="content_item">
+                    <div>
+                        <img src="images/photo05.jpg" class="item_img">
+
+                    </div>
+                    <div>
+                        <p class="item_title">MÃ VNXK_02</p>
+                        <p class="price">Giá:
+                            <span class="old_price">599.000</span>
+                            <span class="new_price">459.000</span>
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="content_item">
+                    <div>
+                        <img src="images/photo03.jpg" class="item_img">
+
+                    </div>
+                    <div>
+                        <p class="item_title">MÃ VNXK_03</p>
+                        <p class="price">Giá:
+                            <span class="old_price">539.000</span>
+                            <span class="new_price">419.000</span>
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="content_item">
+                    <div>
+                        <img src="images/photo02.jpg" class="item_img">
+
+                    </div>
+                    <div>
+                        <p class="item_title">MÃ VNXK_04</p>
+                        <p class="price">Giá:
+                            <span class="old_price">399.000</span>
+                            <span class="new_price">259.000</span>
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="content_item">
+                    <div>
+                        <img src="images/photo04.jpg" class="item_img">
+
+                    </div>
+                    <div>
+                        <p class="item_title">MÃ VNXK_05</p>
+                        <p class="price">Giá:
+                            <span class="old_price">579.000</span>
+                            <span class="new_price">469.000</span>
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="content_item">
+                    <div>
+                        <img src="images/photo06.jpg" class="item_img">
+
+                    </div>
+                    <div>
+                        <p class="item_title">MÃ VNXK_06</p>
+                        <p class="price">Giá:
+                            <span class="old_price">599.000</span>
+                            <span class="new_price">489.000</span>
+                        </p>
+
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+
+        </div>
+        <div style="clear: both">
+
+        </div>
+
+
+
+        <div id="footer">
+            Bản quyền thuộc về:FASHION STORE
+            <p>Gmail:<a href="mailto:fashionstore@gmail.com">fashionstore@gmail.com</a></p>
+
+
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
